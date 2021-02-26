@@ -1,4 +1,5 @@
 import React from 'react'
+import '../Style/nav.css'
 import { Link } from 'react-router-dom'
 
 const Navbar=() => {
@@ -6,8 +7,8 @@ const Navbar=() => {
         <>
             <div className='main'>
                 <div className='top'>
+                <img src='../olx.ico' id='image'/>
                     <div className='input-value'>
-                    <img src='../olx.ico' id='image'/>
                         <i className='fa fa-search'/>
                         <input type='text' placeholder='Pakistan' id='search-country' />
                         <i className="fas fa-chevron-down"/>
@@ -17,7 +18,7 @@ const Navbar=() => {
                         <i className='fa fa-search'/>
                     </div>
                     <div className='info'>
-                        <Link to='#'>Login</Link>
+                        <Link className='link' to='#'>Login</Link>
                         <div className='button'>
                         <i className="fas fa-hand-holding-usd">Sell</i>
                         </div>
