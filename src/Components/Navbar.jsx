@@ -9,7 +9,7 @@ const Navbar=() => {
                 <div className='top'>
                 <img src='../olx.ico' id='image'/>
                     <div className='input-value'>
-                        <i className='fa fa-search'/>
+                        <i className='fa fa-search sear'/>
                         <input type='text' placeholder='Pakistan' id='search-country' />
                         <i className="fas fa-chevron-down"/>
                     </div>
