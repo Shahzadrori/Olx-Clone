@@ -38,6 +38,12 @@ img{
     padding: 5px;
     margin-top: 2px;
 }
+.main div.location{
+    display: none;
+}
+.main .input-value:active > div.location{
+    display: block;
+}
 .search{
     display: flex;
     border: 2px solid;

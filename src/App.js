@@ -1,9 +1,11 @@
 import React from 'react';
 import Navbar from './Components/Navbar';
-import './App.css'
+import './App.css';
+import Form from './Components/Form';
 const App = ()=>{
     return( 
-        <Navbar/>
+        // <Navbar/>
+        <Form/>
     )
 }
 export default App;

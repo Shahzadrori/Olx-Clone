@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Akaya+Telivigala&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=RocknRoll+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+div.outer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+}
+div.inner{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 300px;
+    height: 350px;
+    border: 1px solid #51e3d4;
+    background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQzKkomBTJl1llZApch0jHRKRjqStuHdImQxg&usqp=CAU');
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    padding: 10px;
+}
+.inner h2{    
+    font-family: 'Akaya Telivigala', cursive;
+}
+.inner label{
+    font-family: 'RocknRoll One', sans-serif;
+    margin-right: 150px;
+    margin-top: 20px;
+}
+.inner .email{
+    margin-right: 190px;
+}
+.inner input{
+    font-family: 'Poppins', sans-serif;
+    width: 230px;
+    padding: 3px;
+    border: none;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+
+}
+.inner input::placeholder{
+    margin-left: 10px;
+    color: #51e3d4;
+}
+.btns{
+    display: flex;
+    flex-direction: row;
+    margin-top: 10px;
+}
