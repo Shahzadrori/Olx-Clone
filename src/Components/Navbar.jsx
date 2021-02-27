@@ -20,7 +20,7 @@ const Navbar=() => {
                     <div className='info'>
                         <Link className='link' to='#'>Login</Link>
                         <div className='button'>
-                        <i className="fas fa-hand-holding-usd">Sell</i>
+                        <button><i className="fas fa-hand-holding-usd">Sell</i></button>
                         </div>
                     </div>
                 </div>
