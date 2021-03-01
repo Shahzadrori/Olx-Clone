@@ -5,7 +5,6 @@ const Form =()=>{
     return(
         <>
             <div className='outer'>
-                {/* <div className='forms'> */}
                     <div className='inner'>
                     <i className="fas fa-times"/>
                         <h2 className='top'>Login</h2>
@@ -15,12 +14,13 @@ const Form =()=>{
                         <input type='text' placeholder='Enter your last name'/>
                         <label  className='email'>Email</label>
                         <input type='text' placeholder='Enter your email'/>
+                        <label className='password'>Password</label>
+                        <input type='password' placeholder='Enter the password' />
                         <div className='btns'>
                         <button className='sub-btn'>Submit</button>
                         <button className='res-btn'>Reset</button>
                         </div>
                     </div>
-                {/* </div> */}
             </div>
         </>
     )
