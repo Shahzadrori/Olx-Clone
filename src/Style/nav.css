@@ -1,10 +1,15 @@
+body{
+    position: relative;
+}
 div.top{
+    position: absolute;
     display: flex;
     flex-direction: row;
     align-items: center;
     background-color:#f9f9f9;
     box-shadow: 5px 0px 10px rgba(0, 0, 0, 0.2);
     padding: 10px;
+    width: 100%;
 }
 img{
     margin-left: 30px;
@@ -12,12 +17,15 @@ img{
     height: 50px;
 }
 .input-value{
+    position: relative;
     display: flex;
     margin-left: 15px;
     background-color: #f9fcfb;
     border: 2px solid;
     padding: 5px;
     border-radius: 5px;
+    width: 300px;
+    /* min-width: 200px; */
     -webkit-border-radius: 5px;
     -moz-border-radius: 5px;
     -ms-border-radius: 5px;
@@ -29,11 +37,16 @@ img{
 .input-value i{
     margin-top: 7px;
 }
+.input-value .arrow{
+    position: absolute;
+    left: -20px;
+}
 
 .input-value input{
     border: none;
     outline: none;
     font-size: 1em;
+
     background-color: transparent;
     padding: 5px;
     margin-top: 2px;
@@ -49,7 +62,7 @@ img{
     border: 2px solid;
     padding-left: 40px;
     margin-left: 15px;
-    resize: both;
+    /* resize: both; */
     min-width: 100px;
     border-radius: 5px;
     -webkit-border-radius: 5px;
@@ -83,7 +96,8 @@ img{
     padding: 8px;
     /* margin-left: 30px; */
 }
-.button{
+.but{
+    position: relative;
     width: 90px;
     text-align: center;
     margin-left: 30px;
@@ -98,11 +112,14 @@ img{
     -ms-border-radius: 30px;
     -o-border-radius: 30px;
 }
-.info .button {
+.info .but {
     box-shadow: 1px 5px 5px rgba(0, 0, 0, 0.5);
     
 }
-.info .button i{
+.info .but i{
+    position: absolute;
+    right: 30px;
+    top: 10px;
     font-size: 1.2em;
 }
  .info a {
@@ -118,21 +135,21 @@ img{
 .info a:active{
     color: #b0eacd;
 }
-.info .button:hover{
+.info .but:hover{
     transform: scale(1.02);
     -webkit-transform: scale(1.02);
     -moz-transform: scale(1.02);
     -ms-transform: scale(1.02);
     -o-transform: scale(1.02);
 }
-.info .button :active{
-    transform: scale(1.1);
+/* .info .but :active{
+    /* transform: scale(0.5);
     transition-delay: 1ms;
-    -webkit-transform: scale(1.1);
-    -moz-transform: scale(1.1);
-    -ms-transform: scale(1.1);
-    -o-transform: scale(1.1);
-}
+    -webkit-transform: scale(0.5);
+    -moz-transform: scale(0.5);
+    -ms-transform: scale(0.5);
+    -o-transform: scale(0.5); 
+} */
 .info button{
     background-color: transparent;
     border: none;
@@ -167,7 +184,7 @@ img{
         margin-right: 20px;
         padding: 13px;
     }
-    .button {
+    .but {
         margin-right: 50px;
     }
     .info{
@@ -176,11 +193,15 @@ img{
     .info a{
         margin-left: 10px;
     }
-    .info .button{
+    .info .but{
         display: flex;
         margin-left: 30px;
         align-items: center;
         justify-content: center;
+
+    }
+    .info .but{
+        padding: 15px;
     }
     img{
         margin-left: 9px;
