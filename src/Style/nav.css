@@ -112,6 +112,13 @@ img{
     -ms-border-radius: 30px;
     -o-border-radius: 30px;
 }
+
+.but:active{
+    background-color: #e1f4f3;
+}
+.but button:active{
+    background-color: #e1f4f3;
+}
 .info .but {
     box-shadow: 1px 5px 5px rgba(0, 0, 0, 0.5);
     
