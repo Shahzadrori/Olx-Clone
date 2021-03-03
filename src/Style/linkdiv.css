@@ -22,6 +22,62 @@
 .links a:hover{
     color:#64dfdf ;
 }
+.links a:active{
+    color: black;
+}
 .links a:first-child{
    margin-left: 100px;
+}
+.add{
+    position: absolute;
+    margin-top: 39px;
+    width: 100%;
+    padding-top: 5px;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+.add h4{
+    padding-top: 15px;
+    
+    margin-left: 40px;
+}
+.popsearch{
+    /* position: relative; */
+    padding-top: 15px;
+    /* border: 1px solid; */
+    padding-bottom: 10px;
+}
+.popsearch a{
+    text-decoration: none;
+    font-weight: normal;
+    font-size: 13px;
+    font-family: 'Roboto', sans-serif;
+    color: rgba(0, 0, 0, 0.8);
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.popsearch a:first-child{
+    padding-left: 0%;
+    margin-left: 30px;
+}
+.popsearch a:hover{
+    color: black;
+}
+.popsearch a:active{
+    color: grey;
+}
+.image{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.image img{
+    width: 1200px;
+    min-width: 400px;
+    height: 150px;
+    min-height: 50px;
+    margin-left: 10px;
 }

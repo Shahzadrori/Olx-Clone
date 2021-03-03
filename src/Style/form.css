@@ -41,7 +41,6 @@ div.outer{
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 90vh;
 }
 div.inner{
     display: flex;

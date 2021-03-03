@@ -144,11 +144,9 @@ const Form = () => {
                 placeholder="Enter the password"
               />
               <div className="btns">
-              {/* <Link to='/'> */}
                 <button type="submit" className="sub-btn">
                 Submit
                 </button>
-                {/* </Link> */}
                 {/* <button type='button' className='res-btn'>
                 <Link to='/'>
                 Go
