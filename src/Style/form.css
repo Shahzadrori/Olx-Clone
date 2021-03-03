@@ -23,6 +23,9 @@
     -ms-border-radius: 50%;
     -o-border-radius: 50%;
 }
+form{
+    position: absolute;
+}
 .fas:active{
    background-color: #f9f6f7;
    -webkit-transition: background-color 0.01s ease-in-out;
@@ -38,7 +41,7 @@ div.outer{
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 110vh;
+    height: 90vh;
 }
 div.inner{
     display: flex;

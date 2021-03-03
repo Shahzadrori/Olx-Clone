@@ -1,13 +1,11 @@
-body{
-    position: relative;
-}
+
 div.top{
-    position: absolute;
+    position: relative;
     display: flex;
     flex-direction: row;
     align-items: center;
     background-color:#f9f9f9;
-    box-shadow: 5px 0px 10px rgba(0, 0, 0, 0.2);
+    box-shadow: 5px 0px 5px rgba(0, 0, 0, 0.2);
     padding: 10px;
     width: 100%;
 }
