@@ -163,6 +163,10 @@ div.inner{
     -ms-border-radius: 5px;
     -o-border-radius: 5px;
 }
+.btns button a{
+    text-decoration: none;
+    color: black;
+}
 .btns .sub-btn:hover{
     /* background-image: linear-gradient(to right top, #333705, #653e00, #a43017, #dd005d, #eb12c7);*/
     /* background-color: ; */

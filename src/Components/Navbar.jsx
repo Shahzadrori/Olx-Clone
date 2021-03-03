@@ -4,6 +4,9 @@ import { Link } from 'react-router-dom'
 import Form from './Form'
 
 const Navbar=() => {
+    const Allow = ()=>{
+        
+    }
     return (
         <>
             <div className='main'>
