@@ -16,7 +16,7 @@ const Navbar=() => {
                         <i className='fa fa-search sear'/>
                         <input className='country-input' type='text' placeholder='Pakistan' id='search-country' />
                         <div>
-                        {/* <i className="fas fa-chevron-down arrow"/> */}
+                        <i id='dispear' className="fas fa-chevron-down arrow"/>
                         </div>
                     </div>
                     <div className='search'>

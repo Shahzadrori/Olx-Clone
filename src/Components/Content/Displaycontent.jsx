@@ -15,7 +15,14 @@ const DisCont = () => {
   return (
     <>
       <div className="outerr">
-        <div className="mainer">{Data.map(ncard)}</div>
+      <div className='condiv'>
+      <div className='more'>
+      <h2>More on Motorbikes</h2>
+      <a href='#'>View more</a>
+      </div>
+        <div className="mainer">{Data.map(ncard)}
+        </div>
+        </div>
       </div>
     </>
   );

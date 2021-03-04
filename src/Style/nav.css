@@ -211,3 +211,8 @@ img{
         margin-left: 9px;
     }
 }
+@media(max-width:1321px){
+    #dispear{
+        display: none;
+    }
+}

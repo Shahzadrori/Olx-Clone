@@ -1,6 +1,6 @@
-.inner-content{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+.bor{
+    border-left: 4px solid #ffe227;
+    padding-left: 10px;
+    margin-left: -10px;
+    height: 100px;
 }

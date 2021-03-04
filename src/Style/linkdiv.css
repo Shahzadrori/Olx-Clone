@@ -74,12 +74,15 @@
 
 }
 .image img{
-    width: 1200px;
+    width: 1000px;
     min-width: 400px;
-    height: 150px;
+    height: 170px;
     min-height: 50px;
     margin-left: 10px;
     margin-bottom: 10px;
+}
+.imges{
+    margin-top: 50px;
 }
 .image .low{
     width: 800px;
