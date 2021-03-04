@@ -1,0 +1,22 @@
+.outerr{
+
+}
+.mainer{
+    display: flex;
+    flex-direction: row;
+    justify-content:center;
+    align-items: center;
+    margin: 0px 100px 0px 100px;
+
+}
+.imgee{
+    border: 1px solid;
+}
+.mainer img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    height: 100px;
+    align-items: center;
+}

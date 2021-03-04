@@ -147,11 +147,6 @@ const Form = () => {
                 <button type="submit" className="sub-btn">
                 Submit
                 </button>
-                {/* <button type='button' className='res-btn'>
-                <Link to='/'>
-                Go
-                </Link>
-                </button> */}
               </div>
             </div>
           ) : null}
