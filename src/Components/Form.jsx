@@ -36,7 +36,7 @@ const Form = () => {
     ) {
       alert(
         "Please enter valid email address"
-        //  at position: " 
+        //  at position: "
         // +
         //   atposition +
         //   "dotposition " +
@@ -145,7 +145,7 @@ const Form = () => {
               />
               <div className="btns">
                 <button type="submit" className="sub-btn">
-                Submit
+                  Submit
                 </button>
               </div>
             </div>

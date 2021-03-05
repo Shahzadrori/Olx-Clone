@@ -100,6 +100,7 @@ img{
     text-align: center;
     margin-left: 30px;
     padding: 5px;
+    cursor: pointer;
     border-top: 4px  solid #64dfdf;
     border-right: 4px solid #21209c;
     border-bottom: 4px solid #ffbe0f;
@@ -109,6 +110,9 @@ img{
     -moz-border-radius: 30px;
     -ms-border-radius: 30px;
     -o-border-radius: 30px;
+}
+.but button{
+    cursor: pointer;
 }
 .but:active{
     background-color: #e1f4f3;
