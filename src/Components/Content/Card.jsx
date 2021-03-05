@@ -9,7 +9,7 @@ const Card = (props) => {
 
   return (
     <>
-      <div id={props.id} className="inner-content">
+      <div className="inner-content">
         <div className="like">
           <a href={props.href}>
             <img src={props.imgsrc} />

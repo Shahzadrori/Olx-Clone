@@ -12,6 +12,7 @@ const App = () => {
       <Navbar />
       <Lindiv />
       <DisCont />
+      <Displ/>
       <Switch>
         <Route exact path="/sign-in" component={Form} />
       </Switch>

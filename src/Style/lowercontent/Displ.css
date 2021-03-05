@@ -1,0 +1,12 @@
+.outer{
+  display: flex;
+  flex-direction: row;
+
+}
+.mains{
+  display: inline-flex;
+  justify-content: flex-start;
+  /* width: 1200px; */
+  background-color: aquamarine;
+  
+}

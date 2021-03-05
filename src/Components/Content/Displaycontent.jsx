@@ -8,6 +8,7 @@ const DisCont = () => {
       <>
         <div className="imgee">
           <Card
+            key={value.id}
             href={value.href}
             id={value.id}
             key={value.key}

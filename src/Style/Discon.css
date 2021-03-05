@@ -33,9 +33,9 @@
   align-items: center;
   margin: 0px 100px 0px 100px;
 }
-.imgee :first-child {
+/* .imgee :first-child {
   margin-left: 10px;
-}
+} */
 .imgee {
   display: flex;
   flex-direction: column;
