@@ -17,8 +17,7 @@ const Form = () => {
   const Sub = (e) => {
     e.preventDefault();
     localStorage.setItem("formdata", JSON.stringify(data));
-    Dispatchdata();
-
+   
     var fst = document.getElementById("fName").value;
     var snd = document.getElementById("lName").value;
     var trd = document.getElementById("Email").value;
@@ -46,17 +45,18 @@ const Form = () => {
       alert("Password must contain atleast 6 digits");
     } else {
       setcheck(true);
+      // Dispatchdata();
     }
   };
 
-  function Dispatchdata() {
-    if (localStorage.getItem("formdata")) {
-      let { fname, lname, email, password } = JSON.parse(
-        localStorage.getItem("formdata")
-      );
-      console.log(`${fname} and ${lname} and ${email} and ${password}`);
-    }
-  }
+  // function Dispatchdata() {
+  //   if (localStorage.getItem("formdata")) {
+  //     let { fname, lname, email, password } = JSON.parse(
+  //       localStorage.getItem("formdata")
+  //     );
+  //     // console.log(`${fname} and ${lname} and ${email} and ${password}`);
+  //   }
+  // }
   const targetval = (event) => {
     const value = event.target.value;
     const name = event.target.name;
