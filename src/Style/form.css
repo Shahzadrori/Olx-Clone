@@ -24,7 +24,10 @@
     -o-border-radius: 50%;
 }
 form{
-    position: absolute;
+    /* position: sticky; */
+    position: fixed;
+    top: 130px;
+    cursor: pointer;
 }
 .fas:active{
    background-color: #f9f6f7;
@@ -137,6 +140,7 @@ div.inner{
 }
 .btns .sub-btn{
     /* background-image: linear-gradient(to right top, #051937, #004d7a, #008793, #00bf72, #a8eb12); */
+    cursor: pointer;
     background-color: white;
     color: black;
     padding: 5px;

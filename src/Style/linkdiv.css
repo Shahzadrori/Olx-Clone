@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
 .links{
-    position: absolute;
+    /* position: absolute; */
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
@@ -29,7 +29,7 @@
    margin-left: 100px;
 }
 .add{
-    position: absolute;
+    /* position: absolute; */
     margin-top: 39px;
     width: 100%;
     padding-top: 5px;

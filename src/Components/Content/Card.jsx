@@ -2,20 +2,19 @@ import React from "react";
 import "../../Style/card.css";
 import FavoriteIcon from "@material-ui/icons/Favorite";
 const Card = (props) => {
-  const checked = () => {
-    let color = document.getElementById("icon");
-    color.classList.toggle("color");
-  };
-
+  const click=()=>{
+    var val= document.getElementById(props.id).classList.toggle('color');
+  }
+  
   return (
     <>
-      <div className="inner-content">
-        <div className="like">
+      <div  key={props.key} className="inner-content">
+        <div className="like" >
           <a href={props.href}>
             <img src={props.imgsrc} />
           </a>
           <div className="icn">
-            <FavoriteIcon id="icon" onClick={checked} />
+            <FavoriteIcon id={props.id} className='' onClick={click} />
           </div>
         </div>
         <a href={props.href}>
@@ -28,4 +27,4 @@ const Card = (props) => {
     </>
   );
 };
-export default Card;
+export  default Card;

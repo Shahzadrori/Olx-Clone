@@ -21,6 +21,15 @@
   border: 1px solid rgba(0, 0, 0, 0.7);
   margin-top: 40px;
 }
+.container .imga{
+  display: flex;
+  flex-direction: row;
+}
+.container .imga .icns{
+  margin-top: -40px;
+  margin-right: 10px;
+  cursor: pointer;
+}
 .container .imga img {
   width: 200px;
   height: 100px;
@@ -41,4 +50,7 @@
 }
 .container .lower h2{
       color: #14274e;
+}
+.colors{
+  color: #f14668;
 }

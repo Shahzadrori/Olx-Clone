@@ -4,9 +4,12 @@ import Datas from "./Datas";
 import "../../Style/lowercontent/Displ.css";
 
 const Displ = () => {
-  function ncards(value) {
+
+  function ncards(value,index) {
     return (
       <Card
+        key={index}
+        id={index}
         imgsrcs={value.imgsrcs}
         hrefs={value.hrefs}
         text={value.text}

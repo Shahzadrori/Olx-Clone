@@ -3,18 +3,19 @@ import Card from "./Card";
 import "../../Style/Discon.css";
 import Data from "./Data";
 const DisCont = () => {
-  function ncard(value) {
+  function ncard(value,index) {
+
     return (
       <>
         <div className="imgee">
           <Card
-            key={value.id}
+            key={index}
+            id={index}
             href={value.href}
-            id={value.id}
-            key={value.key}
             imgsrc={value.imgsrc}
             price={value.price}
             text={value.text}
+      
           />
         </div>
       </>

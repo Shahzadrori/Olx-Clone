@@ -35,7 +35,7 @@ const Navbar = () => {
             </Link>
             <div className="but">
               <button>
-                <i className="fas fa-hand-holding-usd">Sell</i>
+                <a href='https://www.olx.com.pk/post'><i className="fas fa-hand-holding-usd">Sell</i></a>
               </button>
             </div>
           </div>
