@@ -4,7 +4,8 @@ import {} from "../../Style/lowercontent/card.css";
 const Card = (prop) => {
   return (
     <>
-      <div className="wraper">
+    {/* <div className='display'> */}
+      <div className="display">
       <div className='container'>
         <div className="imga">
           <a href={prop.hrefs}>
@@ -22,6 +23,7 @@ const Card = (prop) => {
         </a>
         </div>
       </div>
+      {/* </div> */}
     </>
   );
 };
