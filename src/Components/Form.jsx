@@ -2,6 +2,7 @@ import React, { useEffect } from "react";
 import { Link } from "react-router-dom";
 import "../Style/form.css";
 import { useState } from "react";
+import { connect } from "react-redux";
 
 const Form = () => {
   const [data, setdata] = useState({
@@ -17,7 +18,7 @@ const Form = () => {
   const Sub = (e) => {
     e.preventDefault();
     localStorage.setItem("formdata", JSON.stringify(data));
-   
+
     var fst = document.getElementById("fName").value;
     var snd = document.getElementById("lName").value;
     var trd = document.getElementById("Email").value;
@@ -155,4 +156,16 @@ const Form = () => {
     </>
   );
 };
-export default Form;
+
+const mapstate = (state) => {
+  console.log(state);
+  return {
+    task: state.task,
+  };
+};
+const mapdispatch = (dispatch) => {
+  return {
+    addtask: (Task) => {},
+  };
+};
+export default connect(mapstate, mapdispatch)(Form);
