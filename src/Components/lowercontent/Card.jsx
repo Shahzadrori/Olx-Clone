@@ -1,9 +1,10 @@
 import React from "react";
 import FavoriteIcon from "@material-ui/icons/Favorite";
 import {} from "../../Style/lowercontent/card.css";
+import { connect } from "react-redux";
 const Card = (prop) => {
   const clicks = () => {
-    var vla = document.getElementById(prop.id).classList.toggle('colors')
+    var vla = document.getElementById(prop.id).classList.toggle("colors");
   };
   return (
     <>
@@ -14,7 +15,22 @@ const Card = (prop) => {
               <img src={prop.imgsrcs} />
             </a>
             <div className="icns">
-              <FavoriteIcon id={prop.id} onClick={clicks} className=''/>
+              <FavoriteIcon
+                id={prop.id}
+                onClick={() => {
+                  if (prop.tasks == null) {
+                    alert("Sign in first");
+                  } else {
+                    const click = () => {
+                      var val = document
+                        .getElementById(prop.id)
+                        .classList.toggle("color");
+                    };
+                    click();
+                  }
+                }}
+                className=""
+              />
             </div>
           </div>
           <a href={prop.hrefs}>
@@ -28,4 +44,9 @@ const Card = (prop) => {
     </>
   );
 };
-export default Card;
+const mapstate = (state) => {
+  return {
+    tasks: state.task,
+  };
+};
+export default connect(mapstate, null)(Card);

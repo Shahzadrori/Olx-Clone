@@ -5,7 +5,7 @@ import { useState } from "react";
 import { connect } from "react-redux";
 import { Allow } from "../Redux/Action";
 
-const Form = () => {
+const Form = (propes) => {
   const [data, setdata] = useState({
     fname: "",
     lname: "",
@@ -29,7 +29,8 @@ const Form = () => {
       alert("First name can not be blanked and should have atleast 4 digits");
     } else if (snd == null || snd == "" || snd.length < 4) {
       alert("Last name can not be blanked and should have atleast 4 digits");
-    } else if (
+    } 
+    else if (
       atposition < 1 ||
       dotposition < atposition + 2 ||
       dotposition + 2 >= trd.length
@@ -42,14 +43,12 @@ const Form = () => {
         //   "dotposition " +
         //   dotposition
       );
-    } else if (furt.length < 6) {
+    } 
+    else if (furt.length < 6) {
       alert("Password must contain atleast 6 digits");
     } else {
       setcheck(true);
       Dispatchdata();
-      var sotrage = localStorage.setItem("formdata", JSON.stringify(data));
-      // props.addtask(Storage)
-      console.log(Storage);
     }
   };
 
@@ -58,6 +57,7 @@ const Form = () => {
       let { fname, lname, email, password } = JSON.parse(
         localStorage.getItem("formdata")
       );
+        propes.addtask({fname,lname,email,password});
       // console.log(`${fname} and ${lname} and ${email} and ${password}`);
     }
   }

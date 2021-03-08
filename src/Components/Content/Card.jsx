@@ -1,20 +1,33 @@
 import React from "react";
 import "../../Style/card.css";
 import FavoriteIcon from "@material-ui/icons/Favorite";
+import { connect } from "react-redux";
+import useEffect from "react";
 const Card = (props) => {
-  const click=()=>{
-    var val= document.getElementById(props.id).classList.toggle('color');
-  }
-  
   return (
     <>
-      <div  key={props.key} className="inner-content">
-        <div className="like" >
+      <div key={props.key} className="inner-content">
+        <div className="like">
           <a href={props.href}>
             <img src={props.imgsrc} />
           </a>
           <div className="icn">
-            <FavoriteIcon id={props.id} className='' onClick={click} />
+            <FavoriteIcon
+              id={props.id}
+              className=""
+              onClick={() => {
+                if (props.tasks == null) {
+                  alert("Sign in first");
+                } else {
+                  const click = () => {
+                    var val = document
+                      .getElementById(props.id)
+                      .classList.toggle("color");
+                  };
+                  click()
+                }
+              }}
+            />
           </div>
         </div>
         <a href={props.href}>
@@ -27,4 +40,9 @@ const Card = (props) => {
     </>
   );
 };
-export  default Card;
+const mapstate = (state) => {
+  return {
+    tasks: state.task,
+  };
+};
+export default connect(mapstate, null)(Card);
