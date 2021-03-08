@@ -6,7 +6,9 @@ export const Reducer = (state = InitState, action) => {
     case FORM:
       return {
         ...state,
-        task: [...state.task, action.payload],
+        task: [...state.task, action.payload]
       };
+      default:
+         return state;
   }
 };

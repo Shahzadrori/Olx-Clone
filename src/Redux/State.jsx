@@ -1,3 +1,3 @@
 export const InitState = {
-  task: [],
+  task: []
 };

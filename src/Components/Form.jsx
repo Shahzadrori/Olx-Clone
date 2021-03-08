@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import "../Style/form.css";
 import { useState } from "react";
 import { connect } from "react-redux";
+import { Allow } from "../Redux/Action";
 
 const Form = () => {
   const [data, setdata] = useState({
@@ -17,7 +18,6 @@ const Form = () => {
   };
   const Sub = (e) => {
     e.preventDefault();
-    localStorage.setItem("formdata", JSON.stringify(data));
 
     var fst = document.getElementById("fName").value;
     var snd = document.getElementById("lName").value;
@@ -46,18 +46,21 @@ const Form = () => {
       alert("Password must contain atleast 6 digits");
     } else {
       setcheck(true);
-      // Dispatchdata();
+      Dispatchdata();
+      var sotrage = localStorage.setItem("formdata", JSON.stringify(data));
+      // props.addtask(Storage)
+      console.log(Storage);
     }
   };
 
-  // function Dispatchdata() {
-  //   if (localStorage.getItem("formdata")) {
-  //     let { fname, lname, email, password } = JSON.parse(
-  //       localStorage.getItem("formdata")
-  //     );
-  //     // console.log(`${fname} and ${lname} and ${email} and ${password}`);
-  //   }
-  // }
+  function Dispatchdata() {
+    if (localStorage.getItem("formdata")) {
+      let { fname, lname, email, password } = JSON.parse(
+        localStorage.getItem("formdata")
+      );
+      // console.log(`${fname} and ${lname} and ${email} and ${password}`);
+    }
+  }
   const targetval = (event) => {
     const value = event.target.value;
     const name = event.target.name;
@@ -158,14 +161,17 @@ const Form = () => {
 };
 
 const mapstate = (state) => {
-  console.log(state);
+  console.log(state)
   return {
-    task: state.task,
+    tasks: state.task
   };
 };
 const mapdispatch = (dispatch) => {
   return {
-    addtask: (Task) => {},
+    addtask: (Task) => {
+      dispatch(Allow(Task))
+    },
   };
 };
-export default connect(mapstate, mapdispatch)(Form);
+export default connect(mapstate,mapdispatch)(Form);
+// export default Form;
