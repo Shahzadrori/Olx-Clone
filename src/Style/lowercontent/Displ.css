@@ -10,10 +10,10 @@
   background-color: #025955;
 }
 .upfooter .fimg{
-  /* background-color: #025955; */
   display: flex;
   background-color: #dfdfdf;
   margin-top: 100px;
+  height: max-content;
 }
 .upfooter img{
   margin-left: 100px;
