@@ -1,7 +1,16 @@
 .mains{
-  margin-left: 98px;
+  margin-left: 68px;
+}
+@media(max-width:697px){
+  .mains{
+    margin-left: 100px;
+  }
+}
+.upfooter{
+  background-color: #025955;
 }
 .upfooter .fimg{
+  /* background-color: #025955; */
   display: flex;
   background-color: #dfdfdf;
   margin-top: 100px;

@@ -7,6 +7,17 @@
   padding-right: 20px;
   padding-top: 70px;
   padding-bottom: 40px;
+  overflow-x: scroll;
+
+}
+@media(max-width:690px){
+  .condiv{
+    overflow-x: scroll;
+    display: block;
+    width: 600px;
+    margin-left: 30px;
+  }
+  
 }
 .more h2{
   margin-top: -60px;
@@ -40,9 +51,6 @@
   align-items: center;
   margin: 0px 100px 0px 100px;
 }
-/* .imgee :first-child {
-  margin-left: 10px;
-} */
 .imgee {
   display: flex;
   flex-direction: column;
@@ -60,8 +68,19 @@
   -ms-border-radius: 5px;
   -o-border-radius: 5px;
 }
+@media(max-width:690px){
+  .imgee{
+    width: 200px;
+  }
+  .imgee:first-child{
+    margin-left: 300px;
+  }
+ 
+  .imgee img{
+    width: 50px;
+  }
+}
 .mainer img {
-  /* position:unset; */
   width: 200px;
   height: 100px;
   margin-bottom: 20px;

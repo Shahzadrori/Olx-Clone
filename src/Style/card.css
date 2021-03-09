@@ -33,6 +33,13 @@
   /* position: relative; */
   display: flex;
 }
+@media(max-width:690px){
+  .like a img{
+    width: 150px;
+  }
+ 
+}
+
 .like .icn {
   position: initial;
   margin-top: -20px;

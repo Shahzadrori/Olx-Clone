@@ -48,7 +48,7 @@ const Form = (propes) => {
       setcheck(true);
       Dispatchdata();
       localStorage.setItem("formdata", JSON.stringify(data));
-      document.getElementById
+      // console.log(document.getElementById('go-btn').innerHTML = `<Link to='/'>Go</Link>`);
     }
   };
 
@@ -148,7 +148,7 @@ const Form = (propes) => {
                 placeholder="Enter the password"
               />
               <div className="btns">
-                <button type="submit" className="sub-btn">
+                <button id='go-btn' type="submit" className="sub-btn">
                   Submit
                 </button>
               </div>

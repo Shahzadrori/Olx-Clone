@@ -21,6 +21,20 @@
   border: 1px solid rgba(0, 0, 0, 0.7);
   margin-top: 40px;
 }
+
+@media(max-width:697px){
+  .display{
+    display: inline-block;
+  }
+  .container{
+    width: 250px;
+    margin-left: -100px;
+    margin-right: 90px;
+  }
+  .container .imga img{
+    background-color: #14274e;
+  }
+}
 .container .imga{
   display: flex;
   flex-direction: row;
@@ -37,14 +51,12 @@
   margin-top: -20px;
 }
 .container .lower {
-  /* position: relative; */
   width: 100%;
   border-left: 6px solid #ffe227;
   height: 120px;
   margin-bottom: -39px;
 }
 .container .lower h2,h5{
-    /* position: absolute; */
     margin-left: 10px;
     color: rgba(0, 0, 0, 0.6);
 }
