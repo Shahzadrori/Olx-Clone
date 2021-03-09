@@ -29,8 +29,7 @@ const Form = (propes) => {
       alert("First name can not be blanked and should have atleast 4 digits");
     } else if (snd == null || snd == "" || snd.length < 4) {
       alert("Last name can not be blanked and should have atleast 4 digits");
-    } 
-    else if (
+    } else if (
       atposition < 1 ||
       dotposition < atposition + 2 ||
       dotposition + 2 >= trd.length
@@ -43,22 +42,23 @@ const Form = (propes) => {
         //   "dotposition " +
         //   dotposition
       );
-    } 
-    else if (furt.length < 6) {
+    } else if (furt.length < 6) {
       alert("Password must contain atleast 6 digits");
     } else {
       setcheck(true);
       Dispatchdata();
+      localStorage.setItem("formdata", JSON.stringify(data));
+      document.getElementById
     }
   };
 
   function Dispatchdata() {
     if (localStorage.getItem("formdata")) {
-      let { fname, lname, email, password } = JSON.parse(
+      const { fname, lname, email, password } = JSON.parse(
         localStorage.getItem("formdata")
       );
-        propes.addtask({fname,lname,email,password});
-      // console.log(`${fname} and ${lname} and ${email} and ${password}`);
+      propes.addtask({ fname, lname, email, password });
+      console.log(`${fname} and ${lname} and ${email} and ${password}`);
     }
   }
   const targetval = (event) => {
@@ -161,17 +161,17 @@ const Form = (propes) => {
 };
 
 const mapstate = (state) => {
-  console.log(state)
+  console.log(state);
   return {
-    tasks: state.task
+    tasks: state.task,
   };
 };
 const mapdispatch = (dispatch) => {
   return {
     addtask: (Task) => {
-      dispatch(Allow(Task))
+      dispatch(Allow(Task));
     },
   };
 };
-export default connect(mapstate,mapdispatch)(Form);
+export default connect(mapstate, mapdispatch)(Form);
 // export default Form;

@@ -16,7 +16,7 @@ const Card = (props) => {
               id={props.id}
               className=""
               onClick={() => {
-                if (props.tasks == null) {
+                if (props.tasks == null || props.tasks == "") {
                   alert("Sign in first");
                 } else {
                   const click = () => {
@@ -41,6 +41,7 @@ const Card = (props) => {
   );
 };
 const mapstate = (state) => {
+  console.log(state);
   return {
     tasks: state.task,
   };

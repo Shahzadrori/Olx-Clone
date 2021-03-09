@@ -18,15 +18,16 @@ const Card = (prop) => {
               <FavoriteIcon
                 id={prop.id}
                 onClick={() => {
-                  if (prop.tasks == null) {
+                  if (prop.tasks == null || prop.tasks == "") {
                     alert("Sign in first");
                   } else {
                     const click = () => {
                       var val = document
                         .getElementById(prop.id)
                         .classList.toggle("color");
+                        click();
                     };
-                    click();
+                   
                   }
                 }}
                 className=""
@@ -45,6 +46,7 @@ const Card = (prop) => {
   );
 };
 const mapstate = (state) => {
+  console.log(state);
   return {
     tasks: state.task,
   };

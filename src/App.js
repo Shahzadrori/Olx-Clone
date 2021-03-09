@@ -8,14 +8,14 @@ import Lindiv from "./Components/Links";
 import DisCont from "./Components/Content/Displaycontent";
 import Displ from "./Components/lowercontent/Disp";
 const App = () => {
-  useEffect(()=>{
+  // useEffect(()=>{
     // navigator.geolocation.getCurrentPosition(function(position) {
     //   console.log("Latitude is :", position.coords.latitude);
     //   console.log("Longitude is :", position.coords.longitude);
     // });
-    navigator.geolocation.getCurrentPosition(function(position) {
-      console.log(position)
-    });
+    // navigator.geolocation.getCurrentPosition(function(position) {
+    //   console.log(position)
+    // });
     // navigator.geolocation.getCurrentPosition(
     //   function(position) {
     //     console.log(position);
@@ -25,7 +25,7 @@ const App = () => {
     //   }
     // );
 
-  },[])
+  // },[])
   return (
     <>
       <Navbar />
