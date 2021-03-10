@@ -30,11 +30,11 @@ const App = () => {
   return (
     <>
       <Navbar />
-      <SearchDisplay/>
       <Switch>
         <Route exact path="/sign-in" component={Form} />
       </Switch>
       <Lindiv />
+      {/* <SearchDisplay/> */}
       <DisCont />
       <Displ/>
 

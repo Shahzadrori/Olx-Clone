@@ -41,7 +41,7 @@ const Card = (props) => {
   );
 };
 const mapstate = (state) => {
-  console.log(state);
+  // console.log(state);
   return {
     tasks: state.task,
   };
