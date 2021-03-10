@@ -7,6 +7,7 @@ import Form from "./Components/Form";
 import Lindiv from "./Components/Links";
 import DisCont from "./Components/Content/Displaycontent";
 import Displ from "./Components/lowercontent/Disp";
+import SearchDisplay from "./Components/Searches/Search";
 const App = () => {
   // useEffect(()=>{
     // navigator.geolocation.getCurrentPosition(function(position) {
@@ -29,6 +30,7 @@ const App = () => {
   return (
     <>
       <Navbar />
+      <SearchDisplay/>
       <Switch>
         <Route exact path="/sign-in" component={Form} />
       </Switch>

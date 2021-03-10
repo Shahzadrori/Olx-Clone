@@ -1,7 +1,7 @@
 const Data=[
     {
         id:1,
-        keys:11,
+        name:'bike',
         imgsrc:'https://apollo-singapore.akamaized.net/v1/files/whd9xex35rwt2-PK/image;s=300x600;q=60',
         price:'Rs 585,000',
         text:'Trail bikes 250cc best for touring mountain bike at ow motors',
@@ -9,7 +9,7 @@ const Data=[
     },
     {
         id:2,
-        keys:22,
+        name:'bike',
         imgsrc:'https://apollo-singapore.akamaized.net/v1/files/z4ee63w5jxps-PK/image;s=300x600;q=60',
         price:'Rs 680,000',
         text:'Chopper 400cc At Bullet1Motorsports',
@@ -17,7 +17,7 @@ const Data=[
     },
     {
         id:3,
-        keys:33,
+        name:'bike',
         imgsrc:'https://apollo-singapore.akamaized.net/v1/files/uqcqiwowcpea2-PK/image;s=300x600;q=60',
         price:'Rs 380,000',
         text:'sports kawasaki ninja 250cc',
@@ -25,7 +25,7 @@ const Data=[
     },
     {
         id:4,
-        keys:44,
+        name:'bike',
         imgsrc:'https://apollo-singapore.akamaized.net/v1/files/ynp36g53ugrc-PK/image;s=300x600;q=60',
         price:'Rs 140,000',
         text:'Sports Ninja 250cc Used At Bullet 1 Motorsports',

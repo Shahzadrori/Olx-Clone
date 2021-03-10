@@ -1,9 +1,19 @@
 import React from "react";
 import "../Style/nav.css";
 import { Link } from "react-router-dom";
-
+import SearchDisplay from "./Searches/Search";
+import {useState} from 'react';
 const Navbar = () => {
-  const Allow = () => {};
+  const [value,setvalue] = useState();
+   console.log(value)
+    function Call(){
+      if(value == 'bike'){
+        alert('hello');
+        return(
+          <SearchDisplay style={{display:'inline-flex'}} />
+        )
+      }
+    }
   return (
     <>
       <div className="main">
@@ -23,11 +33,12 @@ const Navbar = () => {
           </div>
           <div className="search">
             <input
+              onChange={(eve)=> setvalue(eve.target.value.toLowerCase())}
               type="text"
               placeholder="Find Cars,Mobile Phone and more..."
               id="search-things"
             />
-            <i className="fa fa-search" />
+            <i className="fa fa-search" onClick={Call} />
           </div>
           <div className="info">
             <Link className="link" to="/sign-in">
@@ -35,7 +46,9 @@ const Navbar = () => {
             </Link>
             <div className="but">
               <button>
-                <a href='https://www.olx.com.pk/post'><i className="fas fa-hand-holding-usd">Sell</i></a>
+                <a href="https://www.olx.com.pk/post">
+                  <i className="fas fa-hand-holding-usd">Sell</i>
+                </a>
               </button>
             </div>
           </div>
