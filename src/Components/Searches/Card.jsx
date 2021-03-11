@@ -1,5 +1,4 @@
 import React from "react";
-import "../../Style/Search/card.css";
 const Cards = (prep) => {
   const Call = () => {
     document.getElementById("disply").classList.toggle("hide");

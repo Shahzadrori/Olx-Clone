@@ -1,23 +1,18 @@
 import React from "react";
 import "../Style/nav.css";
 import { Link, Switch } from "react-router-dom";
-import SearchDisplay from "./Searches/Search";
 import { useState } from "react";
-import { Redirect } from "react-router-dom";
+import { connect } from "react-redux";
+import { Search } from "../Redux/Action";
 const Navbar = (pro) => {
   const [value, setvalue] = useState();
-  console.log(value);
-  function Call() {
-    if (value == "BIKE") {
-      alert("hello");
-      
-    }
-  }
+  console.log(pro.addinfo(value))
+  
 
   function hide() {
     document.querySelector(".dis-content").classList.toggle("hide");
-
   }
+  
   return (
     <>
       <div className="main">
@@ -44,7 +39,7 @@ const Navbar = (pro) => {
                 placeholder="Find Cars,Mobile Phone and more..."
                 id="search-things"
               />
-              <i className="fa fa-search" onClick={Call} />
+              <i className="fa fa-search"  />
               <div className="dis-content hide">
                 <ul className="list">
                   <li>
@@ -54,11 +49,9 @@ const Navbar = (pro) => {
                     <Link to="#">Cars</Link>
                   </li>
                   <li>
-                    
                     <Link to="#">Mobiles</Link>
                   </li>
                   <li>
-                    
                     <Link to="#">Plots</Link>
                   </li>
                 </ul>
@@ -82,5 +75,18 @@ const Navbar = (pro) => {
     </>
   );
 };
+const mapstate=(state)=>{
+  console.log(state)
+  return{
+    info:state.carditem
+  }
+}
+const mapdispatch=(dispatch)=>{
+return{
+  addinfo:(information)=>{
+    dispatch(Search(information))
+  }
+}
+}
 
-export default Navbar;
+export default connect(mapstate,mapdispatch)(Navbar);

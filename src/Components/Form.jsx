@@ -48,7 +48,6 @@ const Form = (propes) => {
       setcheck(true);
       Dispatchdata();
       localStorage.setItem("formdata", JSON.stringify(data));
-      // console.log(document.getElementById('go-btn').innerHTML = `<Link to='/'>Go</Link>`);
     }
   };
 
@@ -161,7 +160,7 @@ const Form = (propes) => {
 };
 
 const mapstate = (state) => {
-  console.log(state);
+  // console.log(state);
   return {
     tasks: state.task,
   };

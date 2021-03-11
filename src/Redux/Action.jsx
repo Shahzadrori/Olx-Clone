@@ -1,4 +1,4 @@
-import { FORM } from "./Type";
+import { FORM, INP_VAL } from "./Type";
 
 export const Allow = (Data) => {
   return {
@@ -7,3 +7,9 @@ export const Allow = (Data) => {
   };
 };
 
+export const Search =(info)=>{
+  return{
+    type:INP_VAL,
+    payload:info
+  }
+}

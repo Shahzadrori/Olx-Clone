@@ -2,10 +2,11 @@ import React from "react";
 import Card from "./Card";
 import Datas from "./Datas";
 import "../../Style/lowercontent/Displ.css";
+import { connect } from "react-redux";
 
 const Displ = () => {
-
   function ncards(value,index) {
+   if(checkExistance(value.text)){
     return (
       <Card
         key={index}
@@ -16,6 +17,11 @@ const Displ = () => {
         price={value.price}
       />
     );
+    return null;
+   }
+  }
+  function checkExistance(cardText){
+    return cardText.indexOf("a") > -1
   }
   return (
     <>
@@ -40,4 +46,6 @@ const Displ = () => {
     </>
   );
 };
-export default Displ;
+
+
+// export default Displ;

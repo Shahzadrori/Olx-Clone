@@ -34,7 +34,6 @@ const App = () => {
         <Route exact path="/sign-in" component={Form} />
       </Switch>
       <Lindiv />
-      {/* <SearchDisplay/> */}
       <DisCont />
       <Displ/>
 
