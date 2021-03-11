@@ -41,9 +41,9 @@ const Card = (props) => {
   );
 };
 const mapstate = (state) => {
-  // console.log(state);
+ const login_val = state.Reducer.task;
   return {
-    tasks: state.task,
+    tasks: login_val,
   };
 };
 export default connect(mapstate, null)(Card);

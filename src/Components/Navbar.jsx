@@ -7,7 +7,7 @@ import { Search } from "../Redux/Action";
 const Navbar = (propers) => {
   const [value, setvalue] = useState();
 //  console.log(value);
-console.log (propers.addinp(value));
+propers.addinp(value)
   
 
   function hide() {

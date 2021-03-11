@@ -50,7 +50,7 @@ const Displ = (props) => {
   );
 };
 const mapstates=(state)=>{
-  console.log(state);
+  // console.log(state);
   const car_val = state.InpReducer.carditem;
   // console.log(car_val);
   return{

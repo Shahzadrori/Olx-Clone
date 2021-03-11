@@ -47,7 +47,8 @@ const Form = (propes) => {
     } else {
       setcheck(true);
       Dispatchdata();
-      localStorage.setItem("formdata", JSON.stringify(data));
+    var storage =   localStorage.setItem("formdata", JSON.stringify(data));
+    propes.addtask(storage);
     }
   };
 

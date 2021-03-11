@@ -25,8 +25,9 @@ const Card = (prop) => {
                       var val = document
                         .getElementById(prop.id)
                         .classList.toggle("color");
-                        click();
+                       
                     };
+                    click();
                    
                   }
                 }}
@@ -45,10 +46,11 @@ const Card = (prop) => {
     </>
   );
 };
+
 const mapstate = (state) => {
-  // console.log(state);
-  return {
-    tasks: state.task,
-  };
-};
-export default connect(mapstate, null)(Card);
+  const login_val = state.Reducer.task;
+   return {
+     tasks: login_val,
+   };
+ };
+ export default connect(mapstate, null)(Card);
