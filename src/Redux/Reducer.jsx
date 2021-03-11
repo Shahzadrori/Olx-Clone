@@ -16,8 +16,8 @@ export const InpReducer=(state = Inpstate,action)=>{
     switch(action.type){
       case INP_VAL:
         return{
-          ...state,
-          card:[...state.carditem,action.payload]
+          // ...state,
+          carditem: [action.payload]
         }
         default:{
           return state

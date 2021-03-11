@@ -4,13 +4,14 @@ import { Link, Switch } from "react-router-dom";
 import { useState } from "react";
 import { connect } from "react-redux";
 import { Search } from "../Redux/Action";
-const Navbar = (pro) => {
+const Navbar = (propers) => {
   const [value, setvalue] = useState();
-  console.log(pro.addinfo(value))
+//  console.log(value);
+console.log (propers.addinp(value));
   
 
   function hide() {
-    document.querySelector(".dis-content").classList.toggle("hide");
+    // document.querySelector(".dis-content").classList.toggle("hide");
   }
   
   return (
@@ -33,14 +34,14 @@ const Navbar = (pro) => {
           <div className="vort">
             <div className="search">
               <input
-                onClick={hide}
-                onChange={(eve) => setvalue(eve.target.value.toUpperCase())}
+                // onClick={hide}
+                onChange={(eve) => setvalue(eve.target.value.toLowerCase())}
                 type="text"
                 placeholder="Find Cars,Mobile Phone and more..."
                 id="search-things"
               />
               <i className="fa fa-search"  />
-              <div className="dis-content hide">
+              {/* <div className="dis-content hide">
                 <ul className="list">
                   <li>
                     <Link to="#">Bikes</Link>
@@ -55,7 +56,7 @@ const Navbar = (pro) => {
                     <Link to="#">Plots</Link>
                   </li>
                 </ul>
-              </div>
+              </div> */}
             </div>
           </div>
           <div className="info">
@@ -75,18 +76,19 @@ const Navbar = (pro) => {
     </>
   );
 };
-const mapstate=(state)=>{
-  console.log(state)
+// const mapstates=(state)=>{
+//   // console.log(state)
+//   return{
+//     info:state.carditem
+//   }
+// }
+const mapdispatchs=(dispatch)=>{
   return{
-    info:state.carditem
+    addinp:(itemval)=>{
+     dispatch(Search(itemval))
+    }
   }
-}
-const mapdispatch=(dispatch)=>{
-return{
-  addinfo:(information)=>{
-    dispatch(Search(information))
-  }
-}
 }
 
-export default connect(mapstate,mapdispatch)(Navbar);
+
+export default connect(null,mapdispatchs)(Navbar);

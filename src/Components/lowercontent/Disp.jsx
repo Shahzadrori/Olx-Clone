@@ -3,8 +3,9 @@ import Card from "./Card";
 import Datas from "./Datas";
 import "../../Style/lowercontent/Displ.css";
 import { connect } from "react-redux";
+import { Search } from "../../Redux/Action";
 
-const Displ = () => {
+const Displ = (props) => {
   function ncards(value,index) {
    if(checkExistance(value.text)){
     return (
@@ -17,12 +18,14 @@ const Displ = () => {
         price={value.price}
       />
     );
-    return null;
+    // return null;
    }
+   return null;
   }
   function checkExistance(cardText){
-    return cardText.indexOf("a") > -1
+    return cardText.indexOf(props.card_text) > -1;
   }
+  // console.log(props.card_text)
   return (
     <>
       <div className="outer">
@@ -46,6 +49,14 @@ const Displ = () => {
     </>
   );
 };
-
-
+const mapstates=(state)=>{
+  console.log(state);
+  const car_val = state.InpReducer.carditem;
+  // console.log(car_val);
+  return{
+    card_text: car_val
+  }
+  
+}
+export default connect(mapstates,null)(Displ)
 // export default Displ;
